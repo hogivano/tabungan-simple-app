@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="atry.dev.com.aitc.MainActivity"
+    android:padding="20dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pemasukan"
+        android:id="@+id/btnPemasukan"
+        android:layout_below="@+id/input"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengeluaran"
+        android:id="@+id/btnPengeluaran"
+        android:layout_below="@+id/input"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tabungan Saat ini"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/textTabungan"
+        android:layout_below="@+id/btnPengeluaran"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/nilaiTabungan"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/textTabungan"/>
+</RelativeLayout>
